@@ -1,6 +1,7 @@
 import 'dart:developer' as devtools show log;
 
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class Utils {
   static EdgeInsets get gridPadding => const EdgeInsets.all(5);
@@ -8,7 +9,7 @@ class Utils {
   static SliverGridDelegateWithFixedCrossAxisCount get gridDelegate {
     return const SliverGridDelegateWithFixedCrossAxisCount(
       crossAxisCount: 3,
-      childAspectRatio: (9 / 16) * 0.95,
+      childAspectRatio: 0.75,
     );
   }
 
@@ -23,6 +24,8 @@ class Utils {
 
     return getType<returnType>();
   }
+
+  static String currencyFormat(num n) => NumberFormat.currency().format(n);
 }
 
 extension ObjectUtils<T> on T? {

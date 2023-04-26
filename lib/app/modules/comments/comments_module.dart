@@ -1,5 +1,5 @@
-import 'package:poc_web_context/app/modules/comments/comments_page.dart';
-import 'package:poc_web_context/app/modules/comments/comments_store.dart';
+import 'comments_page.dart';
+import 'comments_store.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class CommentsModule extends Module {

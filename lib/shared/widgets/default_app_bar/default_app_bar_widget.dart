@@ -35,7 +35,7 @@ class _DefaultAppBarWidgetState extends State<DefaultAppBarWidget> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: widget.backgroundColor,
+      backgroundColor: context.theme.primaryColor,
       actions: widget.actions,
       elevation: widget.elevation,
       bottom: widget.bottom,

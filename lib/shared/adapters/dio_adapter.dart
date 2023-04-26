@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
+import '../constants/constants.dart';
 import '../http/errors/http_error.dart';
 import '../http/interceptors/dio_interceptor.dart';
 import '../http/proxy/http_proxy.dart';
@@ -15,7 +16,7 @@ class DioAdapter extends IHttpClientAdapter {
   DioAdapter({this.headers = const {}}) {
     dio = Dio();
     dio.interceptors.addAll([DioInterceptor()]);
-    dio.options = BaseOptions(baseUrl: '', headers: headers);
+    dio.options = BaseOptions(baseUrl: kBaseUrl, headers: headers);
     if (!kIsWeb) {
       HttpProxy(dio);
     }

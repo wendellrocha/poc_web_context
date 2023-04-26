@@ -1,5 +1,5 @@
-import 'package:poc_web_context/app/modules/quotes/quotes_page.dart';
-import 'package:poc_web_context/app/modules/quotes/quotes_store.dart';
+import 'quotes_page.dart';
+import 'quotes_store.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class QuotesModule extends Module {

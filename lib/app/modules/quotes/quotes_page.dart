@@ -1,5 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:poc_web_context/app/modules/quotes/quotes_store.dart';
+import 'quotes_store.dart';
 import 'package:flutter/material.dart';
 
 class QuotesPage extends StatefulWidget {
@@ -8,6 +8,7 @@ class QuotesPage extends StatefulWidget {
   @override
   QuotesPageState createState() => QuotesPageState();
 }
+
 class QuotesPageState extends State<QuotesPage> {
   final QuotesStore store = Modular.get();
 

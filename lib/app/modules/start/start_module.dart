@@ -1,10 +1,10 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:poc_web_context/app/modules/comments/comments_module.dart';
-import 'package:poc_web_context/app/modules/products/products_module.dart';
-import 'package:poc_web_context/app/modules/quotes/quotes_module.dart';
-import 'package:poc_web_context/app/modules/start/start_page.dart';
-import 'package:poc_web_context/app/modules/start/start_store.dart';
-import 'package:poc_web_context/app/modules/todos/todos_module.dart';
+import '../comments/comments_module.dart';
+import '../products/products_module.dart';
+import '../quotes/quotes_module.dart';
+import 'start_page.dart';
+import 'start_store.dart';
+import '../todos/todos_module.dart';
 
 class StartModule extends Module {
   @override

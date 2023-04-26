@@ -1,7 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:poc_web_context/app/modules/auth/auth_page.dart';
-import 'package:poc_web_context/app/modules/auth/auth_store.dart';
-import 'package:poc_web_context/app/modules/auth/pages/login/login_store.dart';
+import 'auth_page.dart';
+import 'auth_store.dart';
+import 'pages/login/login_store.dart';
 
 class AuthModule extends Module {
   @override
